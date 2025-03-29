@@ -1,7 +1,7 @@
 // client/pages/api/transactions.js
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default async function handler(req, res) {
   const { method, query, body } = req;
